@@ -1,9 +1,9 @@
 import java.io.*;
-class SB
+class Stringbuilderss
 {
 public static void main(String[] args)
 {
-StringBuilder s=new StringBuilder("java programming");
+StringBuilderss s=new StringBuilderss("java programming");
 s.append("abc");
 System.out.println(s);
 s.insert(7,"abc");
