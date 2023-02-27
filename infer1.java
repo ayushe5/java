@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class infer1
+class infer1 //this program gives the last name of a person
 {
 public static void main(String[] args)
 {
