@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; //example explaining static keyword
 
 
 class Volume
