@@ -1,20 +1,23 @@
+import java.util.*;
 import java.util.Scanner;
+class Solution
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+String s=sc.nextLine();
+char c=sc.next().charAt(0);
+int count=0;
+char b;
+for(int i=0;i<s.length();i++)
+{
+b=s.charAt(i);
+if(c==b)
+{
+count++;
+}
+}
 
-public class Solution {
-
-    public static void main(String[] args) 
-    {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-        Scanner sc=new Scanner(System.in);
-        int n1,n2;
-        System.out.println("Enter the numbers: ");
-        n1=sc.nextInt();
-        n2=sc.nextInt();
-        if(n1>0 && n2>0)
-        {
-            System.out.println(+ n1 + "-" + n2);
-        }
-        else
-            System.out.println("invalid input");
-    }
+System.out.println(count);
+}
 }
