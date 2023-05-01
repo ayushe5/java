@@ -7,28 +7,38 @@ public class Solution {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
-        int marks[]=new int[n];
-        if(n>0 && n<11)
+        if(n>0 && n<=5)
         {
-            for(int i=0;i<marks.length;i++)
+            int[] Arr=new int[7];
+            for(int i=0;i<n;i++)
             {
-                marks[i]=sc.nextInt();
-            }
-            for(int i=0;i<marks.length;i++)
-            {
-                if(marks[i]>=0 && marks[i]<101)
+                for(int j=0;j<7;j++)
                 {
-                    int sum=0;
-                    for(int s:marks)
-                        sum=sum+s;
-                    System.out.println(sum);
+                    Arr[j]=sc.nextInt();
+                }
+            for(int j=0;j<n;j++)
+            {
+                for(int l=0;l<7;l++)
+            {
+                int sum=0;
+                for(int s:Arr)
+                    sum=sum+s;
+                
+            
+                if(sum==56)
+                {
+                    System.out.println("1");
                     break;
                 }
+                else
+                {
+                    System.out.println("0");
+                    break;
+                }
+                    
             }
-        }
-        else
-        {
-            System.out.println("Invalid");
-        }
-    }
-}
+                break;
+            } 
+        
+    
+}}}}
